@@ -1,0 +1,41 @@
+#App {
+  position: relative;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tempTitle {
+  font-size: 2rem;
+}
+
+@media screen and (width > 768px) {
+  .tempTitle {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (width > 1600px) {
+  .tempTitle {
+    font-size: 8rem;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .tempTitle {
+    animation: tempTitleSpin infinite 20s linear;
+  }
+}
+
+@keyframes tempTitleSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
